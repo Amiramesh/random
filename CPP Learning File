@@ -1,0 +1,47 @@
+/ *****   Classes/Structures     *****/
+
+
+A class is introduced with the class, struct or union keyword .
+
+/ *** final keyword ***/
+
+In C++, the final keyword is used to indicate that a 
+class cannot be inherited from. When you mark a class as final, it prevents other classes from inheriting from it. 
+
+class Base final {
+public:
+    void someFunction() {
+        std::cout << "Function in Base class" << std::endl;
+    }
+};
+
+class base cannot be inherited .
+
+
+/*** friend keyword ***/
+
+ friend class can access private and protected members of another class.
+ 
+ class base {
+   friend class child ;
+ };
+ 
+ class child{}; //  this class can access even private member of base class 
+ 
+ 
+ /***        noexcept             ***/
+ 
+ In C++, noexcept is a specifier that can be applied to functions to indicate that 
+ they do not throw exceptions. It allows you to declare that a function will not throw any 
+ exceptions during its execution, which can be useful for both optimization and ensuring the safety of your code.
+ 
+ int fun() noexcept{
+ };
+ 
+ 
+ /***  virtual ***/ 
+ 
+ if virtual keyword is used before function name then it's linking done at runtime not at compile time .
+ 
+ 
+
